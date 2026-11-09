@@ -1,0 +1,10 @@
+{
+  "assets": [
+    {"id": "web01", "type": "web_server", "importance": 55, "exposure": "internet", "weaknesses": ["outdated_plugin"], "edr": true},
+    {"id": "laptop-amy", "type": "employee_laptop", "importance": 20, "exposure": "email", "weaknesses": ["phishable_user"], "edr": true},
+    {"id": "db01", "type": "database", "importance": 100, "exposure": "internal", "weaknesses": ["weak_service_account"], "edr": true, "crown_jewel": true},
+    {"id": "dc01", "type": "domain_controller", "importance": 90, "exposure": "internal", "weaknesses": ["admin_password_reuse"], "edr": true},
+    {"id": "backup01", "type": "backup_server", "importance": 75, "exposure": "internal", "weaknesses": [], "edr": false}
+  ],
+  "defenses": {"mfa_on_vpn": false, "firewall": true, "patch_level": "mixed"}
+}
